@@ -26,7 +26,7 @@ cm run script \
 	--model=sdxl \
 	--implementation=nvidia \
 	--max_query_count=5000 \
-	--min_query_count=72 \
+	--min_query_count=504 \
 	--framework=tensorrt \
 	--category=datacenter \
 	--scenario=Offline \
@@ -57,4 +57,4 @@ Model Precision: int8
 `FID_SCORE`: `84.33062`, Required accuracy for closed division `>= 23.01086` and `<= 23.95008`
 
 ### Performance Results 
-`Samples per second`: `8.00134`
+`Samples per second`: `8.2807`

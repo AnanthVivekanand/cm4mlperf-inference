@@ -5,7 +5,7 @@ Platform Details
 Linux mlperf-inference-lry-40 5.14.0-427.33.1.el9_4.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Aug 28 17:34:59 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ------------------------------------------------------------
 2. w
- 22:31:51 up  9:09,  0 users,  load average: 4.02, 2.70, 4.26
+ 22:45:49 up  9:23,  0 users,  load average: 5.85, 5.96, 6.11
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 ------------------------------------------------------------
 3. Username
@@ -694,7 +694,7 @@ model		: 17
 model name	: AMD EPYC 9684X 96-Core Processor
 stepping	: 2
 microcode	: 0xa101248
-cpu MHz		: 2550.000
+cpu MHz		: 2120.628
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 192
@@ -2458,7 +2458,7 @@ model		: 17
 model name	: AMD EPYC 9684X 96-Core Processor
 stepping	: 2
 microcode	: 0xa101248
-cpu MHz		: 2121.834
+cpu MHz		: 2550.000
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 192
@@ -2598,7 +2598,7 @@ model		: 17
 model name	: AMD EPYC 9684X 96-Core Processor
 stepping	: 2
 microcode	: 0xa101248
-cpu MHz		: 2550.000
+cpu MHz		: 2120.411
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 192
@@ -3466,7 +3466,7 @@ model		: 17
 model name	: AMD EPYC 9684X 96-Core Processor
 stepping	: 2
 microcode	: 0xa101248
-cpu MHz		: 2550.000
+cpu MHz		: 2120.553
 cache size	: 1024 KB
 physical id	: 1
 siblings	: 192
@@ -4838,7 +4838,7 @@ model		: 17
 model name	: AMD EPYC 9684X 96-Core Processor
 stepping	: 2
 microcode	: 0xa101248
-cpu MHz		: 2121.748
+cpu MHz		: 2550.000
 cache size	: 1024 KB
 physical id	: 1
 siblings	: 192
@@ -4894,7 +4894,7 @@ model		: 17
 model name	: AMD EPYC 9684X 96-Core Processor
 stepping	: 2
 microcode	: 0xa101248
-cpu MHz		: 2550.000
+cpu MHz		: 2121.749
 cache size	: 1024 KB
 physical id	: 1
 siblings	: 192
@@ -10843,10 +10843,10 @@ Flags:                              fpu vme de pse tsc msr pae mce cx8 apic sep 
 available: 2 nodes (0-1)
 node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287
 node 0 size: 386090 MB
-node 0 free: 325991 MB
+node 0 free: 327824 MB
 node 1 cpus: 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383
 node 1 size: 386950 MB
-node 1 free: 315918 MB
+node 1 free: 311996 MB
 node distances:
 node   0   1 
   0:  10  32 
@@ -10854,46 +10854,46 @@ node   0   1
 ------------------------------------------------------------
 9. /proc/meminfo
 MemTotal:       791594860 kB
-MemFree:        657315100 kB
-MemAvailable:   736472872 kB
+MemFree:        655178572 kB
+MemAvailable:   734566088 kB
 Buffers:           14644 kB
-Cached:         82317808 kB
+Cached:         82459840 kB
 SwapCached:            0 kB
-Active:         49256016 kB
-Inactive:       71991176 kB
-Active(anon):   39703244 kB
+Active:         50557004 kB
+Inactive:       72132308 kB
+Active(anon):   41004092 kB
 Inactive(anon):        0 kB
-Active(file):    9552772 kB
-Inactive(file): 71991176 kB
+Active(file):    9552912 kB
+Inactive(file): 72132308 kB
 Unevictable:        9000 kB
 Mlocked:               0 kB
 SwapTotal:             0 kB
 SwapFree:              0 kB
 Zswap:                 0 kB
 Zswapped:              0 kB
-Dirty:               588 kB
+Dirty:              1184 kB
 Writeback:             0 kB
-AnonPages:      38392316 kB
-Mapped:           613512 kB
-Shmem:            788220 kB
-KReclaimable:    2670148 kB
-Slab:            5385288 kB
-SReclaimable:    2670148 kB
-SUnreclaim:      2715140 kB
-KernelStack:      992656 kB
-PageTables:       568860 kB
+AnonPages:      39493688 kB
+Mapped:           720384 kB
+Shmem:            788252 kB
+KReclaimable:    2758620 kB
+Slab:            5490092 kB
+SReclaimable:    2758620 kB
+SUnreclaim:      2731472 kB
+KernelStack:      996144 kB
+PageTables:       583028 kB
 SecPageTables:         0 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:    395797428 kB
-Committed_AS:   490343540 kB
+Committed_AS:   491084352 kB
 VmallocTotal:   13743895347199 kB
-VmallocUsed:     3250668 kB
+VmallocUsed:     3253944 kB
 VmallocChunk:          0 kB
 Percpu:           308736 kB
 HardwareCorrupted:     0 kB
-AnonHugePages:  20367360 kB
+AnonHugePages:  20211712 kB
 ShmemHugePages:        0 kB
 ShmemPmdMapped:        0 kB
 FileHugePages:         0 kB
@@ -10907,8 +10907,8 @@ HugePages_Rsvd:        0
 HugePages_Surp:        0
 Hugepagesize:       2048 kB
 Hugetlb:               0 kB
-DirectMap4k:    10951476 kB
-DirectMap2M:    212088832 kB
+DirectMap4k:    11012916 kB
+DirectMap2M:    212027392 kB
 DirectMap1G:    583008256 kB
 ------------------------------------------------------------
 10. who -r
@@ -11164,7 +11164,7 @@ dev.scsi.logging_level = 0
 dev.tty.ldisc_autoload = 1
 fs.aio-max-nr = 65536
 fs.aio-nr = 0
-fs.dentry-state = 4287985	4004150	45	0	2805351	0
+fs.dentry-state = 4394256	4110131	45	0	2818918	0
 fs.dir-notify-enable = 1
 fs.epoll.max_user_watches = 176181337
 fs.fanotify.max_queued_events = 16384
@@ -11172,8 +11172,8 @@ fs.fanotify.max_user_groups = 128
 fs.fanotify.max_user_marks = 1048576
 fs.file-max = 9223372036854775807
 fs.file-nr = 44576	0	9223372036854775807
-fs.inode-nr = 1474487	501
-fs.inode-state = 1474487	501	0	0	0	0	0
+fs.inode-nr = 1567154	501
+fs.inode-state = 1567154	501	0	0	0	0	0
 fs.inotify.max_queued_events = 16384
 fs.inotify.max_user_instances = 128
 fs.inotify.max_user_watches = 1048576
@@ -11272,7 +11272,7 @@ kernel.msgmnb = 16384
 kernel.msgmni = 32000
 kernel.ngroups_max = 65536
 kernel.nmi_watchdog = 1
-kernel.ns_last_pid = 211559
+kernel.ns_last_pid = 219322
 kernel.numa_balancing = 1
 kernel.numa_balancing_promote_rate_limit_MBps = 65536
 kernel.oops_all_cpu_backtrace = 0
@@ -11302,13 +11302,13 @@ kernel.printk_devkmsg = on
 kernel.printk_ratelimit = 5
 kernel.printk_ratelimit_burst = 10
 kernel.pty.max = 4096
-kernel.pty.nr = 30
+kernel.pty.nr = 34
 kernel.pty.reserve = 1024
 kernel.random.boot_id = 98b7b4d1-4878-4929-be5b-f31eb3a14b5b
 kernel.random.entropy_avail = 256
 kernel.random.poolsize = 256
 kernel.random.urandom_min_reseed_secs = 60
-kernel.random.uuid = 8647659c-60a2-4c78-9724-29e1159661a6
+kernel.random.uuid = e2fce6bd-f756-4402-8bd8-d3b4db812266
 kernel.random.write_wakeup_threshold = 256
 kernel.randomize_va_space = 2
 kernel.real-root-dev = 0
@@ -12807,7 +12807,7 @@ net.mptcp.stale_loss_cnt = 4
 net.netfilter.nf_conntrack_acct = 0
 net.netfilter.nf_conntrack_buckets = 262144
 net.netfilter.nf_conntrack_checksum = 1
-net.netfilter.nf_conntrack_count = 1674
+net.netfilter.nf_conntrack_count = 1686
 net.netfilter.nf_conntrack_dccp_loose = 1
 net.netfilter.nf_conntrack_dccp_timeout_closereq = 64
 net.netfilter.nf_conntrack_dccp_timeout_closing = 64
