@@ -1,0 +1,96 @@
+[2024-11-18 09:44:03,318 systems.py:197 INFO] Found unknown device in GPU connection topology: NIC0. Skipping.
+[2024-11-18 09:44:03,318 systems.py:197 INFO] Found unknown device in GPU connection topology: NIC1. Skipping.
+[2024-11-18 09:44:03,318 systems.py:197 INFO] Found unknown device in GPU connection topology: NIC2. Skipping.
+[2024-11-18 09:44:03,429 main.py:229 INFO] Detected system ID: KnownSystem.newFourH100
+/home/cmuser/.local/lib/python3.8/site-packages/torchvision/datapoints/__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+/home/cmuser/.local/lib/python3.8/site-packages/torchvision/transforms/v2/__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+[2024-11-18 09:44:05,255 generate_conf_files.py:107 INFO] Generated measurements/ entries for newFourH100_TRT/stable-diffusion-xl/Offline
+[2024-11-18 09:44:05,255 __init__.py:46 INFO] Running command: python3 -m code.stable-diffusion-xl.tensorrt.harness --logfile_outdir="/home/cmuser/CM/repos/local/cache/6712b485075c4fe8/test_results/1b41d1041a1b-nvidia_original-gpu-tensorrt-vdefault-scc24-main/stable-diffusion-xl/offline/performance/run_1" --logfile_prefix="mlperf_log_" --performance_sample_count=5000 --test_mode="PerformanceOnly" --gpu_batch_size=8 --mlperf_conf_path="/home/cmuser/CM/repos/local/cache/02144893f8ce40a0/inference/mlperf.conf" --tensor_path="build/preprocessed_data/coco2014-tokenized-sdxl/5k_dataset_final/" --use_graphs=false --user_conf_path="/home/cmuser/CM/repos/mlcommons@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/2920e377d0d648689a81a175eeddd96e.conf" --gpu_inference_streams=1 --gpu_copy_streams=1 --gpu_engines="./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan,./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan,./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan,./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan" --scenario Offline --model stable-diffusion-xl
+[2024-11-18 09:44:05,255 __init__.py:53 INFO] Overriding Environment
+[2024-11-18 09:44:08,070 systems.py:197 INFO] Found unknown device in GPU connection topology: NIC0. Skipping.
+[2024-11-18 09:44:08,070 systems.py:197 INFO] Found unknown device in GPU connection topology: NIC1. Skipping.
+[2024-11-18 09:44:08,070 systems.py:197 INFO] Found unknown device in GPU connection topology: NIC2. Skipping.
+/home/cmuser/.local/lib/python3.8/site-packages/torchvision/datapoints/__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+/home/cmuser/.local/lib/python3.8/site-packages/torchvision/transforms/v2/__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+[2024-11-18 09:44:10,159 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:10,319 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:11,036 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:12,903 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:15,253 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:15,385 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:16,096 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:17,847 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:20,187 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:20,321 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:21,031 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:22,793 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:25,184 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:25,315 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:26,028 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:27,760 backend.py:71 INFO] Loading TensorRT engine: ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan.
+[2024-11-18 09:44:29,436 harness.py:207 INFO] Start Warm Up!
+[2024-11-18 09:45:28,359 harness.py:209 INFO] Warm Up Done!
+[2024-11-18 09:45:28,360 harness.py:211 INFO] Start Test!
+[2024-11-18 09:47:27,787 backend.py:801 INFO] [Server] Received 500 total samples
+[2024-11-18 09:47:27,788 backend.py:809 INFO] [Device 0] Reported 120 samples
+[2024-11-18 09:47:27,788 backend.py:809 INFO] [Device 1] Reported 128 samples
+[2024-11-18 09:47:27,788 backend.py:809 INFO] [Device 2] Reported 128 samples
+[2024-11-18 09:47:27,788 backend.py:809 INFO] [Device 3] Reported 124 samples
+[2024-11-18 09:47:27,788 harness.py:214 INFO] Test Done!
+[2024-11-18 09:47:27,788 harness.py:216 INFO] Destroying SUT...
+[2024-11-18 09:47:27,788 harness.py:219 INFO] Destroying QSL...
+benchmark : Benchmark.SDXL
+buffer_manager_thread_count : 0
+data_dir : /home/cmuser/CM/repos/local/cache/5a62a909e14a4c17/data
+gpu_batch_size : 8
+gpu_copy_streams : 1
+gpu_inference_streams : 1
+input_dtype : int32
+input_format : linear
+log_dir : /home/cmuser/CM/repos/local/cache/bcfcc3f269b147a7/repo/closed/NVIDIA/build/logs/2024.11.18-09.43.58
+mlperf_conf_path : /home/cmuser/CM/repos/local/cache/02144893f8ce40a0/inference/mlperf.conf
+model_path : /home/cmuser/CM/repos/local/cache/5a62a909e14a4c17/models/SDXL/
+offline_expected_qps : 4.0
+precision : int8
+preprocessed_data_dir : /home/cmuser/CM/repos/local/cache/5a62a909e14a4c17/preprocessed_data
+scenario : Scenario.Offline
+system : SystemConfiguration(host_cpu_conf=CPUConfiguration(layout={CPU(name='AMD EPYC 9654 96-Core Processor', architecture=<CPUArchitecture.x86_64: AliasedName(name='x86_64', aliases=(), patterns=())>, core_count=96, threads_per_core=1): 1}), host_mem_conf=MemoryConfiguration(host_memory_capacity=Memory(quantity=1.584936672, byte_suffix=<ByteSuffix.TB: (1000, 4)>, _num_bytes=1584936672000), comparison_tolerance=0.05), accelerator_conf=AcceleratorConfiguration(layout=defaultdict(<class 'int'>, {GPU(name='NVIDIA H100 PCIe', accelerator_type=<AcceleratorType.Discrete: AliasedName(name='Discrete', aliases=(), patterns=())>, vram=Memory(quantity=79.6474609375, byte_suffix=<ByteSuffix.GiB: (1024, 3)>, _num_bytes=85520809984), max_power_limit=350.0, pci_id='0x233110DE', compute_sm=90): 4})), numa_conf=NUMAConfiguration(numa_nodes={}, num_numa_nodes=2), system_id='newFourH100')
+tensor_path : build/preprocessed_data/coco2014-tokenized-sdxl/5k_dataset_final/
+test_mode : PerformanceOnly
+use_graphs : False
+user_conf_path : /home/cmuser/CM/repos/mlcommons@cm4mlops/script/generate-mlperf-inference-user-conf/tmp/2920e377d0d648689a81a175eeddd96e.conf
+system_id : newFourH100
+config_name : newFourH100_stable-diffusion-xl_Offline
+workload_setting : WorkloadSetting(HarnessType.Custom, AccuracyTarget.k_99, PowerSetting.MaxP)
+optimization_level : plugin-enabled
+num_profiles : 1
+config_ver : custom_k_99_MaxP
+accuracy_level : 99%
+inference_server : custom
+skip_file_checks : False
+power_limit : None
+cpu_freq : None
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIP-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-CLIPWithProj-Offline-gpu-b8-fp16.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-UNetXL-Offline-gpu-b8-int8.custom_k_99_MaxP.plan
+[I] Loading bytes from ./build/engines/newFourH100/stable-diffusion-xl/Offline/stable-diffusion-xl-VAE-Offline-gpu-b8-fp32.custom_k_99_MaxP.plan
+[2024-11-18 09:47:30,730 run_harness.py:166 INFO] Result: result_samples_per_second: 4.18764, Result is VALID
+ 
+======================== Result summaries: ========================
+
